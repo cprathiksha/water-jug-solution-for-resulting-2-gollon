@@ -1,0 +1,99 @@
+<html>
+<head>
+	<style>
+	#grad1 {
+    height: 640px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white,#1aa3ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white,#1aa3ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white,#1aa3ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white,#1aa3ff); /* Standard syntax (must be last) */
+}
+</style>
+<script type="text/javascript">
+<!--
+var x={a:0};
+var y={b:0};
+
+function d(y,x) 
+{
+	document.write("<center><h1>");
+	document.write(y.b);
+	document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");
+	document.write(x.a);
+	document.write("<br>");
+	document.write("</h1></center>");
+}
+function s(y,x) 
+{
+while(y.b!=2)
+{	
+for(x.a;x.a<3;++x.a)
+	{
+		y.b--;
+	if(y.b==0)
+	{
+		x.a++;
+		break;
+	}
+}
+		d(y,x);
+		if(y.b==2){}
+
+		else if(x.a==3)
+		{
+			x.a=0;
+			d(y,x);
+			s(y,x);
+		}
+	else if(y.b==0)
+		{
+			y.b=4;
+			d(y,x);
+			
+
+		}
+	
+}
+	}
+
+function w(){
+
+document.write("<center><h1><br><br><b>SOLUTION FOUND</b><br></h1></center>");
+document.write("<center><h1>Jug 4_______Jug 3</h1></center>");
+
+d(y,x);
+y.b=4;
+d(y,x);
+
+s(y,x);
+
+}
+
+
+//-->
+</script>
+<html>
+<head>
+<style>
+p{
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+	<div id="grad1">
+	<center>
+		<br><br>
+			<br><br>
+				<br><br>
+					<br><br>
+
+<p>Click on button to call the function</p>
+<form>
+<input type="button" onclick="w()" value="Get the solution for resulting gollon 2">
+</form>
+</center>
+</div>
+</body>
+</html>
